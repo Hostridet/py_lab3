@@ -33,6 +33,6 @@ if __name__ == '__main__':
     template.globals["len"] = len
     template.globals["round"] = round
 
-    with open('html/function.html', 'w', encoding='utf-8-sig') as outfile:
+    with open('function.html', 'w', encoding='utf-8-sig') as outfile:
         result_html = template.render(x=x_list, y=f_list, plot=create_plot(x_list, f_list, "image/function.jpg"))
         outfile.write(result_html)

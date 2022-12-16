@@ -22,3 +22,6 @@ div {
   display: flex;
   align-items: center;
 }
+.tables {
+  margin: 5px;
+}

@@ -55,8 +55,16 @@ functions = [
     Function("y(x)", lambda x: x ** 2 - 5 * x + 1, **params),
     Function("z(x)", lambda x: 1 / (x ** 2 + 1), **params)
 ]
-function = functions[1]
-function.calculate()
+
+function1 = functions[0]
+function1.calculate()
+
+function2 = functions[1]
+function2.calculate()
+
+function3 = functions[2]
+function3.calculate()
+
 
 if __name__ == '__main__':
     with open('template/functions_template.jinja2', 'r', encoding='utf-8-sig') as infile:
@@ -71,8 +79,12 @@ if __name__ == '__main__':
     with open('html/functions.html', 'w', encoding='utf-8-sig') as outfile:
         result_html = template.render(
             functions=functions,
-            function=function,
-            max_lines=10,
-            plot=create_plot(x=function.x, y=function.y, plot_name="image/functions.jpg")
+            function1=function1,
+            function2=function2,
+            function3=function3,
+            max_lines=20,
+            plot1=create_plot(x=function1.x, y=function1.y, plot_name="image/functions1.jpg"),
+            plot2 = create_plot(x=function2.x, y=function2.y, plot_name="image/functions2.jpg"),
+            plot3=create_plot(x=function3.x, y=function3.y, plot_name="image/functions3.jpg")
         )
         outfile.write(result_html)

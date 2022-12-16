@@ -1,0 +1,106 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Таблица и график функции</title>
+    <link rel="stylesheet" href="../css/functions.css">
+</head>
+<body>
+<div class="setter">
+    <form>
+        <p>Функция:<label>
+            <select name="func">
+                
+                    <option  value="f(x)">f(x)</option>
+                
+                    <option  value="y(x)">y(x)</option>
+                
+                    <option selected value="z(x)">z(x)</option>
+                
+            </select>
+        </label></p>
+        <p>Начало интервала: <label><input type="text" name="a" size="1" value="-2"></label></p>
+        <p>Конец интервала: <label><input type="text" name="b" size="1" value="6"></label></p>
+        <p>Количество значений: <label><input type="text" name="n" size="1" value="30"></label></p>
+        <p><input type="submit" value="Построить"></p>
+        <p><b>z(x) = 1 / (x<sup>2</sup> + 1)</b></p>
+    </form>
+</div>
+<div class="representaion">
+    <div>
+        <table>
+            <tr>
+                <th>x</th>
+                <th>z(x)</th>
+            </tr>
+            <tbody>
+            
+                
+                    <tr>
+                        <td>-2.0</td>
+                        <td>0.2</td>
+                    </tr>
+                
+                    <tr>
+                        <td>-1.724</td>
+                        <td>0.2517</td>
+                    </tr>
+                
+                    <tr>
+                        <td>-1.448</td>
+                        <td>0.3228</td>
+                    </tr>
+                
+                    <tr>
+                        <td>-1.172</td>
+                        <td>0.4211</td>
+                    </tr>
+                
+                    <tr>
+                        <td>-0.897</td>
+                        <td>0.5544</td>
+                    </tr>
+                
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+                
+                    <tr>
+                        <td>4.897</td>
+                        <td>0.04</td>
+                    </tr>
+                
+                    <tr>
+                        <td>5.172</td>
+                        <td>0.036</td>
+                    </tr>
+                
+                    <tr>
+                        <td>5.448</td>
+                        <td>0.0326</td>
+                    </tr>
+                
+                    <tr>
+                        <td>5.724</td>
+                        <td>0.0296</td>
+                    </tr>
+                
+                    <tr>
+                        <td>6.0</td>
+                        <td>0.027</td>
+                    </tr>
+                
+            
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <img src="image/functions.jpg" alt="plot">
+    </div>
+</div>
+</body>
+</html>
